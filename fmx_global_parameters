@@ -1,0 +1,53 @@
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!	 GUI_LINE="GUI NAMEDGROUP INPUT_GROUP INPUT_ATTRIBUTES%INPUT_TYPE%INPUT_FORMAT Input Coordinate Parameters"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI ATTRLIST_ENCODED INPUT_ATTRIBUTES &quot; &quot; Attributes:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR INPUT_TYPE Latitude&lt;space&gt;Only,Latitude%Longitude&lt;space&gt;Only,Longitude%Latitude&lt;space&gt;and&lt;space&gt;Longitude,Both Coordinate Type:"
+#!   DEFAULT_VALUE="Both"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR INPUT_FORMAT Decimal&lt;space&gt;Degrees&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5.2169&lt;u00b0&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80.6303&lt;u00b0&gt;&lt;space&gt;E&lt;closeparen&gt;,D%Degrees&lt;comma&gt;&lt;space&gt;Decimal&lt;space&gt;Minutes&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13.02&lt;apos&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37.82&lt;apos&gt;&lt;space&gt;E&lt;closeparen&gt;,DDM%Degrees&lt;comma&gt;&lt;space&gt;Minutes&lt;comma&gt;&lt;space&gt;Seconds&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,DMS%ISO-6709&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-051301.3+0803749.5&lt;solidus&gt;&lt;closeparen&gt;,ISO Input Format:"
+#!   DEFAULT_VALUE="DMS"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!	 GUI_LINE="GUI NAMEDGROUP OUTPUT_GROUP OUTPUT_FORMAT%OUTPUT_SYMBOLOGY%OUTPUT_DECIMALS%OUTPUT_SEPARATION%OUTPUT_QUOTATION Output Coordinate Parameters"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR OUTPUT_FORMAT Decimal&lt;space&gt;Degrees&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-5.2169&lt;comma&gt;&lt;space&gt;80.6303&lt;closeparen&gt;,D%Degrees&lt;comma&gt;&lt;space&gt;Decimal&lt;space&gt;Minutes&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13.02&lt;apos&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37.82&lt;apos&gt;&lt;space&gt;E&lt;closeparen&gt;,DDM%Degrees&lt;comma&gt;&lt;space&gt;Minutes&lt;comma&gt;&lt;space&gt;Seconds&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,DMS%ISO-6709&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-051301.3+0803749.5&lt;solidus&gt;&lt;closeparen&gt;,ISO Output Format:"
+#!   DEFAULT_VALUE="D"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR OUTPUT_SYMBOLOGY Use&lt;space&gt;minus&lt;space&gt;symbol&lt;space&gt;&lt;openparen&gt;-&lt;closeparen&gt;&lt;space&gt;for&lt;space&gt;negative&lt;space&gt;coordinates,Minus%Use&lt;space&gt;N&lt;comma&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;E&lt;space&gt;or&lt;space&gt;W,NSEW Direction Style:"
+#!   DEFAULT_VALUE="Minus"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL RANGE_SLIDER_OR_ATTR OUTPUT_DECIMALS &quot;RANGE:[0,]%PRECISION:0&quot; Decimals:"
+#!   DEFAULT_VALUE="2"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR OUTPUT_SEPARATION Spaces&lt;space&gt;and&lt;space&gt;a&lt;space&gt;comma&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;&lt;space&gt;13&lt;apos&gt;&lt;space&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;&lt;space&gt;37&lt;apos&gt;&lt;space&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,SpacesAndCommas%Single&lt;space&gt;space&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;S&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;E&lt;closeparen&gt;,Space%Single&lt;space&gt;comma&lt;space&gt;and&lt;space&gt;space&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;E&lt;closeparen&gt;,Comma Separation:"
+#!   DEFAULT_VALUE="Comma"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR OUTPUT_QUOTATION Use&lt;space&gt;prime&lt;space&gt;symbols&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;u2032&gt;01.3&lt;u2033&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;u2032&gt;49.5&lt;u2033&gt;&lt;space&gt;E&lt;closeparen&gt;,PrimeSymbols%Use&lt;space&gt;straight&lt;space&gt;quotation&lt;space&gt;marks&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,StraightQuotes%Use&lt;space&gt;curved&lt;space&gt;quotation&lt;space&gt;marks&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;u2019&gt;01.3&lt;u201d&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;u2019&gt;49.5&lt;u201d&gt;&lt;space&gt;E&lt;closeparen&gt;,CurvedQuotes DM(S) Symbology:"
+#!   DEFAULT_VALUE="PrimeSymbols"
+#!   IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI IGNORE OPTIONAL TEXT_EDIT_PYTHON_PARM INPUT_ATTRIBUTES_ENCODED Python Script:"
+#!   DEFAULT_VALUE="return&lt;space&gt;FME_MacroValues&lt;openbracket&gt;&lt;apos&gt;INPUT_ATTRIBUTES&lt;apos&gt;&lt;closebracket&gt;"
+#!   IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
