@@ -13,7 +13,7 @@
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR INPUT_FORMAT Decimal&lt;space&gt;Degrees&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5.2169&lt;u00b0&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80.6303&lt;u00b0&gt;&lt;space&gt;E&lt;closeparen&gt;,D%Degrees&lt;comma&gt;&lt;space&gt;Decimal&lt;space&gt;Minutes&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13.02&lt;apos&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37.82&lt;apos&gt;&lt;space&gt;E&lt;closeparen&gt;,DDM%Degrees&lt;comma&gt;&lt;space&gt;Minutes&lt;comma&gt;&lt;space&gt;Seconds&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,DMS%ISO-6709&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-051301.3+0803749.5&lt;solidus&gt;&lt;closeparen&gt;,ISO Input Format:"
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR INPUT_FORMAT Decimal&lt;space&gt;Degrees&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5.2169&lt;u00b0&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80.6303&lt;u00b0&gt;&lt;space&gt;E&lt;closeparen&gt;,DD%Degrees&lt;comma&gt;&lt;space&gt;Decimal&lt;space&gt;Minutes&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13.02&lt;apos&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37.82&lt;apos&gt;&lt;space&gt;E&lt;closeparen&gt;,DDM%Degrees&lt;comma&gt;&lt;space&gt;Minutes&lt;comma&gt;&lt;space&gt;Seconds&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,DMS%ISO-6709&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-051301.3+0803749.5&lt;solidus&gt;&lt;closeparen&gt;,ISO Input Format:"
 #!   DEFAULT_VALUE="DMS"
 #!   IS_STAND_ALONE="true"
 #! />
@@ -21,8 +21,8 @@
 #!	 GUI_LINE="GUI NAMEDGROUP OUTPUT_GROUP OUTPUT_FORMAT%OUTPUT_SYMBOLOGY%OUTPUT_DECIMALS%OUTPUT_SEPARATION%OUTPUT_QUOTATION Output Coordinate Parameters"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR OUTPUT_FORMAT Decimal&lt;space&gt;Degrees&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-5.2169&lt;comma&gt;&lt;space&gt;80.6303&lt;closeparen&gt;,D%Degrees&lt;comma&gt;&lt;space&gt;Decimal&lt;space&gt;Minutes&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13.02&lt;apos&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37.82&lt;apos&gt;&lt;space&gt;E&lt;closeparen&gt;,DDM%Degrees&lt;comma&gt;&lt;space&gt;Minutes&lt;comma&gt;&lt;space&gt;Seconds&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,DMS%ISO-6709&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-051301.3+0803749.5&lt;solidus&gt;&lt;closeparen&gt;,ISO Output Format:"
-#!   DEFAULT_VALUE="D"
+#!   GUI_LINE="GUI LOOKUP_CHOICE_OR_ATTR OUTPUT_FORMAT Decimal&lt;space&gt;Degrees&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-5.2169&lt;comma&gt;&lt;space&gt;80.6303&lt;closeparen&gt;,DD%Degrees&lt;comma&gt;&lt;space&gt;Decimal&lt;space&gt;Minutes&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13.02&lt;apos&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37.82&lt;apos&gt;&lt;space&gt;E&lt;closeparen&gt;,DDM%Degrees&lt;comma&gt;&lt;space&gt;Minutes&lt;comma&gt;&lt;space&gt;Seconds&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;5&lt;u00b0&gt;13&lt;apos&gt;01.3&lt;quote&gt;&lt;space&gt;S&lt;comma&gt;&lt;space&gt;80&lt;u00b0&gt;37&lt;apos&gt;49.5&lt;quote&gt;&lt;space&gt;E&lt;closeparen&gt;,DMS%ISO-6709&lt;space&gt;&lt;openparen&gt;e.g.&lt;space&gt;-051301.3+0803749.5&lt;solidus&gt;&lt;closeparen&gt;,ISO Output Format:"
+#!   DEFAULT_VALUE="DD"
 #!   IS_STAND_ALONE="true"
 #! />
 #! <GLOBAL_PARAMETER
