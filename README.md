@@ -20,6 +20,7 @@ However, if an input attribute did not match the specified input format or some 
 Besides validation of the selected input format, the DegreeFormatter will also check if the coordinate(s) are within a valid range. Minutes and seconds should be smaller than 60. Latitudinal degrees should not be lower than -90 or higher than 90, whereas longitudinal degrees should not be lower than -180 or higher than 180. Note that if the _Input Type_ is "Latitude and Longitude", the DegreeFormatter assumes that the first value is the Latitude component and the second value is the Longitude component.
 
 ### Notes  
+- Also available on [FME Hub](https://hub.safe.com/transformers/degreeformatter) for convenient installation.
 - This transformer has been tested on Python 2.7 and 3.4.  
 - Any non-UTF8 encoded string inputs will result in a UTF8 encoded output.   
 - If you notice a bug or desire a new feature, please contact me. Or make a pull request!  
