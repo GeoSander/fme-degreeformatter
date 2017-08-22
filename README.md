@@ -1,4 +1,4 @@
-# fme-degreeconverter
+# FME® DegreeFormatter
 
 ## About  
 Custom transformer for [FME®](https://www.safe.com/how-it-works/) that converts DMS-, DDM-, or ISO 6709-formatted coordinate values to DD-formatted values and vice versa.  
@@ -17,7 +17,7 @@ In other words, the original _MyAttribute_ will be preserved and the output will
 ### Error handling  
 This transformer does not have a _<Rejected>_ port, because it allows multiple input attributes.  
 However, if an input attribute did not match the specified input format or some other error occurred, the suffixed output attributes mentioned in the example above will not be set. Instead, the output attribute _MyAttribute.error_ should contain the failure reason (e.g. a validation error).  
-Besides validation of the selected input format, the DegreeConverter will also check if the coordinate(s) are within a valid range. Minutes and seconds should be smaller than 60. Latitudinal degrees should not be lower than -90 or higher than 90, whereas longitudinal degrees should not be lower than -180 or higher than 180. Note that if the _Input Type_ is "Latitude and Longitude", the DegreeConverter assumes that the first value is the Latitude component and the second value is the Longitude component.
+Besides validation of the selected input format, the DegreeFormatter will also check if the coordinate(s) are within a valid range. Minutes and seconds should be smaller than 60. Latitudinal degrees should not be lower than -90 or higher than 90, whereas longitudinal degrees should not be lower than -180 or higher than 180. Note that if the _Input Type_ is "Latitude and Longitude", the DegreeFormatter assumes that the first value is the Latitude component and the second value is the Longitude component.
 
 ### Notes  
 - This transformer has been tested on Python 2.7 and 3.4.  
@@ -28,7 +28,7 @@ Besides validation of the selected input format, the DegreeConverter will also c
 ## Usage  
 ### Input Coordinate Parameters   
 **Attributes**  
-Specify the input attribute(s) for the conversion. Note that all attributes should contain values with _the same coordinate type and input format_. If this is not the case, you will have to use multiple DegreeConverters.
+Specify the input attribute(s) for the conversion. Note that all attributes should contain values with _the same coordinate type and input format_. If this is not the case, you will have to use multiple DegreeFormatters.
 
 **Coordinate Type**  
 An attribute can hold a latitude, longitude or latitude-longitude coordinate value. If "Latitude" is specified here, the result of the conversion will only be written to the _MyAttribute.lat_ attribute. If "Longitude" is chosen, the result will only be written to _MyAttribute.lon_ and if "Latitude and Longitude" is specified, the results will be written to the _MyAttribute.latlon_ in concatenated form and separately to the _.lat_ and _.lon_ suffixed attributes as well.
@@ -43,11 +43,11 @@ Choose between one of the following coordinate formats:
 Note:  
 - See the parameter value selector in the transformer properties dialog for examples.  
 - All decimal values should use a dot (.) as a delimiter!  
-- The ISO-6709 format should officially have a trailing slash, but the DegreeConverter allows omittance for inputs only.
+- The ISO-6709 format should officially have a trailing slash, but the DegreeFormatter allows omittance for inputs only.
 
 ### Output Coordinate Parameters 
 **Output Format**  
-See _Input Format_ for the supported formats. If the output format is the same as the input format, the DegreeConverter can be used to validate and/or reformat the attribute. If validation fails, the _.lat_, _.lon_ and _.latlon_ suffixed output attributes will be empty and the failure reason will be written to _MyAttribute.error_.  
+See _Input Format_ for the supported formats. If the output format is the same as the input format, the DegreeFormatter can be used to validate and/or reformat the attribute. If validation fails, the _.lat_, _.lon_ and _.latlon_ suffixed output attributes will be empty and the failure reason will be written to _MyAttribute.error_.  
 Note that if _Output Format_ is set to "ISO-6709", the output parameters below will never have an effect and the latitude-longitude output will always have a trailing slash.
 
 **Direction Style**  
