@@ -1,7 +1,7 @@
 # fme-degreeconverter
 
 ## About  
-Custom transformer for (FME)[https://www.safe.com/how-it-works/] that converts DMS-, DDM-, or ISO 6709-formatted coordinate values to DD-formatted values and vice versa.  
+Custom transformer for [FME®](https://www.safe.com/how-it-works/) that converts DMS-, DDM-, or ISO 6709-formatted coordinate values to DD-formatted values and vice versa.  
 This transformer is able to convert multiple attributes of the same format and coordinate type at once. Values can contain either a latitude or longitude coordinate or both (as a delimited string with any kind of separator). 
 
 ### Example  
