@@ -14,7 +14,7 @@
 # </ul>
 # <p>In other words, the original <em>MyAttribute</em> will be preserved and the output will be written to <em>.lat</em>, <em>.lon</em> and <em>.latlon</em> suffixed attributes. In the case of DD only, the <em>.lat</em> and <em>.lon</em> attributes will always be numeric.</p>
 # <h3>Error handling</h3>
-# <p>This transformer does not have a <em><Rejected></em> port, because it allows multiple input attributes.<br />
+# <p>This transformer does not have a <em>&lt;Rejected&gt;</em> port, because it allows multiple input attributes.<br />
 # However, if an input attribute did not match the specified input format or some other error occurred, the suffixed output attributes mentioned in the example above will not be set. Instead, the output attribute <em>MyAttribute.error</em> should contain the failure reason (e.g. a validation error).<br />
 # Besides validation of the selected input format, the DegreeFormatter will also check if the coordinate(s) are within a valid range. Minutes and seconds should be smaller than 60. Latitudinal degrees should not be lower than -90 or higher than 90, whereas longitudinal degrees should not be lower than -180 or higher than 180. Note that if the <em>Input Type</em> is "Latitude and Longitude", the DegreeFormatter assumes that the first value is the Latitude component and the second value is the Longitude component.</p>
 # <h3>Notes</h3>

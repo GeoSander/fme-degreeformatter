@@ -24,7 +24,9 @@ Besides validation of the selected input format, the DegreeFormatter will also c
 - This transformer has been tested on Python 2.7 and 3.4.  
 - Any non-UTF8 encoded string inputs will result in a UTF8 encoded output.   
 - If you notice a bug or desire a new feature, please contact me. Or make a pull request!  
-- Released under GNU General Public License v3.0.  
+- Released under GNU General Public License v3.0.
+- The TestSuite workspace is used for testing and provides some examples.
+
 
 ## Usage  
 ### Input Coordinate Parameters   
