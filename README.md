@@ -25,7 +25,7 @@ Besides validation of the selected input format, the DegreeFormatter will also c
 - Any non-UTF8 encoded string inputs will result in a UTF8 encoded output.   
 - If you notice a bug or desire a new feature, please contact me. Or make a pull request!  
 - Released under [GNU General Public License v3.0](https://github.com/SanderSchaminee/fme-degreeformatter/blob/master/LICENSE).
-- The [TestSuite workspace](https://github.com/SanderSchaminee/fme-degreeformatter/blob/master/TestSuite.fmw) is used for testing and provides some examples.
+- The [test workspace](https://github.com/SanderSchaminee/fme-degreeformatter/blob/master/DegreeFormatterTest.fmw) is used for testing and provides some examples.
 
 
 ## Usage  
